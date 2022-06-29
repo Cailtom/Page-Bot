@@ -1,0 +1,127 @@
+@use "../tools/variables"
+
+*
+    padding: 0
+    margin: 0
+
+body
+    background: variables.$Mint-cream
+
+//  Scrollbar invisivél
+::-webkit-scrollbar
+    width: 0
+
+.bg-light
+    /* Aviso: Remover esse background irá deixar a NavBar com uma parte branca. */
+    background-color: variables.$Indigo-dye !important
+
+    .bg-light
+        background-color: variables.$Indigo-dye !important
+
+        .navbar-brand
+            color: variables.$Ghost-white
+            font-weight: 600
+
+        button
+            border: none
+
+            & > i
+                color: variables.$Ghost-white
+
+        a.nav-link
+            color: variables.$White-50 !important
+
+#home
+    padding: 60px 0
+
+.home-main
+    background-color: variables.$Indigo-dye
+
+    section
+        display: flex
+        align-items: center
+
+        header
+            color: variables.$Ghost-white
+
+            h2
+                font-size: 2.5rem
+                font-weight: 600
+
+            p
+                font-size: 1.3rem
+
+        button
+            font-weight: 600
+
+#description
+    background-color: variables.$Mint-cream
+    padding: 30px 0
+
+    article
+        header
+            h2
+                font-size: 2.2rem
+                color: variables.$Prussian-blue
+                font-weight: 600
+
+        p
+            color: variables.$Black
+            font-size: 1rem
+
+            & > span
+                font-weight: 600
+
+    .more
+        color: variables.$Prussian-blue
+
+    .col-md-4
+        header
+            border: 1px solid variables.$Pewter-blue
+            border-radius: 3px
+            position: relative
+            margin-bottom: 20px
+
+            &::after,
+            &::before
+                background: variables.$Mint-cream
+                content: ""
+                position: absolute
+                width: 10px
+                height: 77%
+                top: 10%
+
+            &::after
+                right: -5px
+
+            &::before
+                left: -5px
+
+            h2
+                color: variables.$Indigo-dye
+                font-size: 1.2rem
+                font-weight: 600
+                margin-top: 10px
+
+            p
+                color: variables.$Brack-50
+                font-size: 1rem
+
+#ads
+    background-color: variables.$Indigo-dye
+
+    header
+        h2
+            font-size: 2rem
+
+        p
+            font-size: 1rem
+
+footer
+    background-color: variables.$Bg-footer
+
+    p
+        color: variables.$Ghost-white
+        margin-bottom: 0
+        padding: 10px 0
+        font-size: 0.8rem
